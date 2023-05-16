@@ -115,3 +115,96 @@ To https://github.com/ALVINdimpos/Git-Exercises.git
  * [new branch]      dev -> dev
 andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % 
 ```
+# Exercise 1
+```
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % $ git stash save "Save changes for home page"
+
+zsh: command not found: $
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git add .
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git stash
+Saved working directory and index state WIP on dev: 823d156 Added readme
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git add .
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git stash
+Saved working directory and index state WIP on dev: 823d156 Added readme
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git add .
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git status
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git stash
+Saved working directory and index state WIP on dev: 823d156 Added readme
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git status
+On branch dev
+nothing to commit, working tree clean
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git stash pop about.html
+error: about.html is not a valid reference
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git stash pop 1         
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   home.html
+
+Dropped refs/stash@{1} (3482ab5afc52b8852dc1d17bc98a48fd319caa9e)
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git commit -m "ave changes for about page"
+[dev 02c72a0] ave changes for about page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 24 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git push origin dev
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 498 bytes | 498.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ALVINdimpos/Git-Exercises.git
+   823d156..02c72a0  dev -> dev
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git stash pop 2
+fatal: Log for 'refs/stash' only has 2 entries.
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git stash pop 1
+On branch dev
+nothing to commit, working tree clean
+Dropped refs/stash@{1} (27b65dca2cd5169e30cbcb4d7bc4d6c4b77a1887)
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git stash pop
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped refs/stash@{0} (eef21e0b48d6bb4b9c2a1ee39ea8ba31413e6cae)
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git reset HEAD .
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git reset
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git status
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git reset --hard
+HEAD is now at 02c72a0 ave changes for about page
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git status
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git reset --soft
+```
