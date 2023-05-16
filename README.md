@@ -208,3 +208,49 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git reset --soft
 ```
+## BUNDLE 2
+# Exercise 1
+```
+git bransh ft/bundle-2
+git: 'bransh' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git branch ft/bundle-2
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git checkout ft/bundle-2
+Switched to branch 'ft/bundle-2'
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git add .
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git add .
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git commit -m 'Added service.html page'
+[ft/bundle-2 bbdfd20] Added service.html page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 12 insertions(+)
+ create mode 100644 services.html
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git push origin ft/bundle-2
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 273 bytes | 273.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/ALVINdimpos/Git-Exercises/pull/new/ft/bundle-2
+remote: 
+To https://github.com/ALVINdimpos/Git-Exercises.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % 
+```
