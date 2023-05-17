@@ -254,3 +254,183 @@ To https://github.com/ALVINdimpos/Git-Exercises.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % 
 ```
+# Exercise 2
+```
+ Gym Git Exercise Solutions git:(ft/bundle-2) git checkout main           
+Switched to branch 'main'
+➜  Gym Git Exercise Solutions git:(main) git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From https://github.com/ALVINdimpos/Git-Exercises
+ * branch            main       -> FETCH_HEAD
+   95fe4e2..3484c50  main       -> origin/main
+Updating 95fe4e2..3484c50
+Fast-forward
+ README.md     |  1 +
+ about.html    | 12 ++++++++++++
+ home.html     | 12 ++++++++++++
+ services.html | 12 ++++++++++++
+ 4 files changed, 37 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 services.html
+➜  Gym Git Exercise Solutions git:(main) git checkout -b ft/service-redesign    
+Switched to a new branch 'ft/service-redesign'
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git add .                          
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) ✗ git commit -m "ft/services-redesign: added servecs page"
+[ft/service-redesign e22a201] ft/services-redesign: added servecs page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 7 insertions(+)
+ rename services.html => service.html (59%)
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git push oriigin ft/services-redesigm
+error: src refspec ft/services-redesigm does not match any
+error: failed to push some refs to 'oriigin'
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git push origin ft/services-redesign 
+error: src refspec ft/services-redesign does not match any
+error: failed to push some refs to 'https://github.com/ALVINdimpos/Git-Exercises.git'
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git push origin ft/services-redesign -f
+error: src refspec ft/services-redesign does not match any
+error: failed to push some refs to 'https://github.com/ALVINdimpos/Git-Exercises.git'
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git push -f                            
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git push --set-upstream origin ft/service-redesign
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 536 bytes | 536.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/ALVINdimpos/Git-Exercises/pull/new/ft/service-redesign
+remote: 
+To https://github.com/ALVINdimpos/Git-Exercises.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+Branch 'ft/service-redesign' set up to track remote branch 'ft/service-redesign' from 'origin'.
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git giff                                          
+git: 'giff' is not a git command. See 'git --help'.
+
+The most similar command is
+        diff
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git diff
+
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git merge main
+Already up to date.
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git checout main                                        
+git: 'checout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git checkout main                  
+Switched to branch 'main'
+➜  Gym Git Exercise Solutions git:(main) git add .        
+➜  Gym Git Exercise Solutions git:(main) ✗ git commit -m "Added some  changes"                      
+[main fd573f1] Added some  changes
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 7 insertions(+)
+ rename services.html => service.html (59%)
+➜  Gym Git Exercise Solutions git:(main) git push                                          
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+➜  Gym Git Exercise Solutions git:(main) git push --set-upstream origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 525 bytes | 525.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ALVINdimpos/Git-Exercises.git
+   3484c50..fd573f1  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+➜  Gym Git Exercise Solutions git:(main) git checkout ft/services-redesign  
+error: pathspec 'ft/services-redesign' did not match any file(s) known to git
+➜  Gym Git Exercise Solutions git:(main) git pull                           
+Already up to date.
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git merge main           
+Auto-merging service.html
+CONFLICT (content): Merge conflict in service.html
+Automatic merge failed; fix conflicts and then commit the result.
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) ✗ git add       
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) ✗ git  merge --continue
+U       service.html
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) ✗ git  merge --continue
+U       service.html
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) ✗ git commit -m "feat: solved a conflict"
+U       service.html
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) ✗ git add .                              
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) ✗ git commit -m "feat: solved a conflict"
+[ft/service-redesign 5eea256] feat: solved a conflict
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git push -f                            
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 353 bytes | 353.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ALVINdimpos/Git-Exercises.git
+   e22a201..5eea256  ft/service-redesign -> ft/service-redesign
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) 
+```
