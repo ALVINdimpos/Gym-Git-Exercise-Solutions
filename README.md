@@ -115,7 +115,7 @@ To https://github.com/ALVINdimpos/Git-Exercises.git
  * [new branch]      dev -> dev
 andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % 
 ```
-# Exercise 1
+# Exercise 2
 ```
 andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % $ git stash save "Save changes for home page"
 
