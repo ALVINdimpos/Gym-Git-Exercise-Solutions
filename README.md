@@ -434,3 +434,211 @@ To https://github.com/ALVINdimpos/Git-Exercises.git
    e22a201..5eea256  ft/service-redesign -> ft/service-redesign
 ➜  Gym Git Exercise Solutions git:(ft/service-redesign) 
 ```
+## BUNDLE 3
+# Exercise 1
+```
+➜  Gym Git Exercise Solutions git:(ft/service-redesign) git checkout -b ft/team-page                   
+Switched to a new branch 'ft/team-page'
+➜  Gym Git Exercise Solutions git:(ft/team-page) git add .                   
+➜  Gym Git Exercise Solutions git:(ft/team-page) ✗ git status
+On branch ft/team-page
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+➜  Gym Git Exercise Solutions git:(ft/team-page) ✗ git  push            
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+➜  Gym Git Exercise Solutions git:(ft/team-page) ✗  git push --set-upstream origin ft/team-pag
+error: src refspec ft/team-pag does not match any
+error: failed to push some refs to 'https://github.com/ALVINdimpos/Git-Exercises.git'
+➜  Gym Git Exercise Solutions git:(ft/team-page) ✗ git commit -m "feat: added team page " 
+[ft/team-page 972a6b5] feat: added team page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+➜  Gym Git Exercise Solutions git:(ft/team-page) git  push -f                          
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+➜  Gym Git Exercise Solutions git:(ft/team-page) git push --set-upstream origin ft/team-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 268 bytes | 268.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/ALVINdimpos/Git-Exercises/pull/new/ft/team-page
+remote: 
+To https://github.com/ALVINdimpos/Git-Exercises.git
+ * [new branch]      ft/team-page -> ft/team-page
+Branch 'ft/team-page' set up to track remote branch 'ft/team-page' from 'origin'.
+➜  Gym Git Exercise Solutions git:(ft/team-page) git checkout main                          
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+➜  Gym Git Exercise Solutions git:(main) git checkout -b ft/contact-page            
+Switched to a new branch 'ft/contact-page'
+➜  Gym Git Exercise Solutions git:(ft/contact-page) git checkout ft/team-page                  
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+➜  Gym Git Exercise Solutions git:(ft/team-page) git log                  
+
+➜  Gym Git Exercise Solutions git:(ft/team-page) git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+➜  Gym Git Exercise Solutions git:(ft/contact-page) git cherry-pick 972a6b591dda84d2feb20c4fcbb2f75c5d271771 
+[ft/contact-page 440ee83] feat: added team page
+ Date: Thu May 18 14:10:43 2023 +0200
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 12 insertions(+)
+ create mode 100644 team.html
+➜  Gym Git Exercise Solutions git:(ft/contact-page) git add .                                                
+➜  Gym Git Exercise Solutions git:(ft/contact-page) ✗ git commit -m "feat: added contact page"                 
+[ft/contact-page 34734b0] feat: added contact page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 12 insertions(+)
+ create mode 100644 contact.html
+➜  Gym Git Exercise Solutions git:(ft/contact-page) git push                                   
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+➜  Gym Git Exercise Solutions git:(ft/contact-page) git push --set-upstream origin ft/contact-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 486 bytes | 486.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/ALVINdimpos/Git-Exercises/pull/new/ft/contact-page
+remote: 
+To https://github.com/ALVINdimpos/Git-Exercises.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+Branch 'ft/contact-page' set up to track remote branch 'ft/contact-page' from 'origin'.
+➜  Gym Git Exercise Solutions git:(ft/contact-page) git checkkout -b ft/faq-page                             
+git: 'checkkout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+➜  Gym Git Exercise Solutions git:(ft/contact-page) git checkout -b ft/faq-page 
+Switched to a new branch 'ft/faq-page'
+➜  Gym Git Exercise Solutions git:(ft/faq-page) git  add .                 
+➜  Gym Git Exercise Solutions git:(ft/faq-page) ✗ git commit m "feat: added faq page"     
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'feat: added faq page' did not match any file(s) known to git
+➜  Gym Git Exercise Solutions git:(ft/faq-page) ✗ git commit -m "feat: added faq page"
+[ft/faq-page 300ec0c] feat: added faq page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 faq.html
+➜  Gym Git Exercise Solutions git:(ft/faq-page) git push --set-upstream origin ft/faq-page    
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 310.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/ALVINdimpos/Git-Exercises/pull/new/ft/faq-page
+remote: 
+To https://github.com/ALVINdimpos/Git-Exercises.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+Branch 'ft/faq-page' set up to track remote branch 'ft/faq-page' from 'origin'.
+➜  Gym Git Exercise Solutions git:(ft/faq-page) git log                                   
+
+[1]  + 5349 suspended  git log
+➜  Gym Git Exercise Solutions git:(ft/faq-page) git revert 440ee83316764d37039a4a2ecd2e4204051a8bf0                
+Removing team.html
+hint: Waiting for your editor to close the file... 
+[2]  + 5503 suspended  git revert 440ee83316764d37039a4a2ecd2e4204051a8bf0
+➜  Gym Git Exercise Solutions git:(ft/faq-page) ✗ git add .                                          
+➜  Gym Git Exercise Solutions git:(ft/faq-page) ✗ git commit -m 'feat:reverted some chsnges from team'
+[ft/faq-page c85589d] feat:reverted some chsnges from team
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 12 deletions(-)
+ delete mode 100644 team.html
+➜  Gym Git Exercise Solutions git:(ft/faq-page) git push                                            
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 261 bytes | 261.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ALVINdimpos/Git-Exercises.git
+   300ec0c..c85589d  ft/faq-page -> ft/faq-page
+➜  Gym Git Exercise Solutions git:(ft/faq-page) 
+```
