@@ -642,7 +642,7 @@ To https://github.com/ALVINdimpos/Git-Exercises.git
    300ec0c..c85589d  ft/faq-page -> ft/faq-page
 ➜  Gym Git Exercise Solutions git:(ft/faq-page) 
 ```
-# Exercise 1
+# Exercise 2
 ```
 ➜  Gym Git Exercise Solutions git:(ft/faq-page) git checkout -b ft/home-page-redesign               
 Switched to a new branch 'ft/home-page-redesign'
