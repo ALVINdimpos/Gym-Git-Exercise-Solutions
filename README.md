@@ -1,5 +1,5 @@
-## BUNDLE 1
-# Exercise 1
+# BUNDLE 1
+## Exercise 1
 ```
 andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % echo "# Git-Exercises" >> README.md
 andelarwanda@Andelas-MacBook-Pro Gym Git Exercise Solutions % git init 
