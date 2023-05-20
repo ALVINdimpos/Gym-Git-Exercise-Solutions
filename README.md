@@ -759,3 +759,170 @@ Branch 'ft/home-page-redesign' set up to track remote branch 'ft/home-page-redes
 Already up to date.
 ➜  Gym Git Exercise Solutions git:(ft/home-page-redesign) 
 ```
+# BUNDLE 4
+## Exercise 1
+```
+To https://github.com/ALVINdimpos/Git-Exercises.git
+   300ec0c..c85589d  ft/faq-page -> ft/faq-page
+➜  Gym Git Exercise Solutions git:(ft/faq-page) git checkout -b ft/home-page-redesign               
+Switched to a new branch 'ft/home-page-redesign'
+➜  Gym Git Exercise Solutions git:(ft/home-page-redesign) git checkout main                    
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+➜  Gym Git Exercise Solutions git:(main) git add .        
+➜  Gym Git Exercise Solutions git:(main) ✗ git commit -m "feat: added some chaangees in services page"
+[main 911f102] feat: added some chaangees in services page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+➜  Gym Git Exercise Solutions git:(main) git push                                                   
+To https://github.com/ALVINdimpos/Git-Exercises.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/ALVINdimpos/Git-Exercises.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+➜  Gym Git Exercise Solutions git:(main) git push -f                               
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 414 bytes | 414.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ALVINdimpos/Git-Exercises.git
+ + 8b93240...911f102 main -> main (forced update)
+➜  Gym Git Exercise Solutions git:(main) git add .  
+➜  Gym Git Exercise Solutions git:(main) ✗ git commit --amend --no-edit                               
+[main 4c277f3] feat: added some chaangees in services page
+ Date: Thu May 18 14:43:58 2023 +0200
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 4 insertions(+)
+➜  Gym Git Exercise Solutions git:(main) git checkout ft/home-page-redesign    
+Switched to branch 'ft/home-page-redesign'
+➜  Gym Git Exercise Solutions git:(ft/home-page-redesign) git rebase main                                    
+First, rewinding head to replay your work on top of it...
+Applying: feat: added team page
+Applying: feat: added contact page
+Applying: feat: added faq page
+Applying: feat:reverted some chsnges from team
+➜  Gym Git Exercise Solutions git:(ft/home-page-redesign) git status     
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+➜  Gym Git Exercise Solutions git:(ft/home-page-redesign) git add   
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+➜  Gym Git Exercise Solutions git:(ft/home-page-redesign) ✗ git add .
+➜  Gym Git Exercise Solutions git:(ft/home-page-redesign) ✗ git commit -m "feat: added some chaangees in services page"
+[ft/home-page-redesign 0c31b02] feat: added some chaangees in services page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 12 insertions(+)
+➜  Gym Git Exercise Solutions git:(ft/home-page-redesign) git push -f                                                
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+➜  Gym Git Exercise Solutions git:(ft/home-page-redesign) git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 18, done.
+➜  Gym Git Exercise Solutions git:(ft/home-page-redesign) git checkout main                                          
+Switched to branch 'main'
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+➜  Gym Git Exercise Solutions git:(main) git remote add git-copy git remote add origin https://github.com/ALVINdimpos/GIT-clone-exercises.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+➜  Gym Git Exercise Solutions git:(main) git remote add git-copy https://github.com/ALVINdimpos/GIT-clone-exercises.git 
+➜  Gym Git Exercise Solutions git:(main) git remote                                                                    
+git-copy
+origin
+➜  Gym Git Exercise Solutions git:(main) git add . 
+➜  Gym Git Exercise Solutions git:(main) ✗ git commit -m "feat: added some chaangees in home page"    
+[main fb4aff8] feat: added some chaangees in home page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+➜  Gym Git Exercise Solutions git:(main) git push origin                                        
+To https://github.com/ALVINdimpos/Git-Exercises.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ALVINdimpos/Git-Exercises.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+➜  Gym Git Exercise Solutions git:(main) git push origin  git-copy
+error: src refspec git-copy does not match any
+error: failed to push some refs to 'https://github.com/ALVINdimpos/Git-Exercises.git'
+➜  Gym Git Exercise Solutions git:(main) git push origin  git-copy -f
+error: src refspec git-copy does not match any
+error: failed to push some refs to 'https://github.com/ALVINdimpos/Git-Exercises.git'
+➜  Gym Git Exercise Solutions git:(main) git push origin -f           
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 800 bytes | 800.00 KiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+To https://github.com/ALVINdimpos/Git-Exercises.git
+ + 911f102...fb4aff8 main -> main (forced update)
+➜  Gym Git Exercise Solutions git:(main) 
+```
