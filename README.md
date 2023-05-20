@@ -1074,3 +1074,52 @@ To https://github.com/ALVINdimpos/Git-Exercises.git
    a4aaf40..08bc60a  main -> main
 ➜  Gym Git Exercise Solutions git:(main) 
 ```
+## Exercise 2
+```
+➜  Gym Git Exercise Solutions git:(main) cd Desktop                                                                  
+cd: no such file or directory: Desktop
+➜  Gym Git Exercise Solutions git:(main) cd ..     
+➜  Desktop git clone https://github.com/ALVINdimpos/git-cafe-exercise.git                                                
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 100
+Receiving objects: 100% (107/107), 1.95 MiB | 226.00 KiB/s, done.
+Resolving deltas: 100% (5/5), done.
+➜  Desktop cd git-cafe-exercise 
+➜  git-cafe-exercise git:(main) code .              
+zsh: command not found: code
+➜  git-cafe-exercise git:(main) code .
+zsh: command not found: code
+➜  git-cafe-exercise git:(main) 
+  git-cafe-exercise git:(main) ✗ git add .                                                     
+➜  git-cafe-exercise git:(main) ✗ git commit -m " Welcome to our place to Welcome to our restaurant"
+[main ce2a6c8]  Welcome to our place to Welcome to our restaurant
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  git-cafe-exercise git:(main) git push                                                              
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 354.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ALVINdimpos/git-cafe-exercise.git
+   d1d3f9c..ce2a6c8  main -> main
+➜  git-cafe-exercise git:(main) 
+
+```
