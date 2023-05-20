@@ -926,3 +926,119 @@ To https://github.com/ALVINdimpos/Git-Exercises.git
  + 911f102...fb4aff8 main -> main (forced update)
 ➜  Gym Git Exercise Solutions git:(main) 
 ```
+## Exercise 2
+```
+➜  Gym Git Exercise Solutions git:(main) git checkout -b ft/footer                              
+Switched to a new branch 'ft/footer'
+➜  Gym Git Exercise Solutions git:(ft/footer) git add .                
+➜  Gym Git Exercise Solutions git:(ft/footer) ✗ git commit -m "feat: added footer page"                
+[ft/footer c26a241] feat: added footer page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer.html
+➜  Gym Git Exercise Solutions git:(ft/footer) git status                             
+On branch ft/footer
+nothing to commit, working tree clean
+➜  Gym Git Exercise Solutions git:(ft/footer) git add . 
+➜  Gym Git Exercise Solutions git:(ft/footer) ✗ git commit -m "feat: added changes in  footer page"
+[ft/footer c87bc4e] feat: added changes in  footer page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+➜  Gym Git Exercise Solutions git:(ft/footer) git push                                           
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+➜  Gym Git Exercise Solutions git:(ft/footer)  git push --set-upstream origin ft/footer
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.48 KiB | 1.48 MiB/s, done.
+Total 12 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/ALVINdimpos/Git-Exercises/pull/new/ft/footer
+remote: 
+To https://github.com/ALVINdimpos/Git-Exercises.git
+ * [new branch]      ft/footer -> ft/footer
+Branch 'ft/footer' set up to track remote branch 'ft/footer' from 'origin'.
+➜  Gym Git Exercise Solutions git:(ft/footer) git checkout main                                  
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+➜  Gym Git Exercise Solutions git:(main) git checkout -b ft/squashing         
+Switched to a new branch 'ft/squashing'
+➜  Gym Git Exercise Solutions git:(ft/squashing) git merge --squash ft/footer
+Updating fb4aff8..c87bc4e
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+➜  Gym Git Exercise Solutions git:(ft/squashing) ✗ git add .                   
+➜  Gym Git Exercise Solutions git:(ft/squashing) ✗ git commit -m "feat: footer changes squashing"     
+[ft/squashing a771550] feat: footer changes squashing
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+➜  Gym Git Exercise Solutions git:(ft/squashing) git push                                      
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing
+
+➜  Gym Git Exercise Solutions git:(ft/squashing) git push --set-upstream origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 528 bytes | 528.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/ALVINdimpos/Git-Exercises/pull/new/ft/squashing
+remote: 
+To https://github.com/ALVINdimpos/Git-Exercises.git
+ * [new branch]      ft/squashing -> ft/squashing
+Branch 'ft/squashing' set up to track remote branch 'ft/squashing' from 'origin'.
+➜  Gym Git Exercise Solutions git:(ft/squashing) 
+```
