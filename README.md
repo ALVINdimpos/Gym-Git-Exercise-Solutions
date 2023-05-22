@@ -1162,3 +1162,103 @@ To https://github.com/ALVINdimpos/git-cafe-exercise.git
  * [new branch]      ft/Menu -> ft/Menu
 Branch 'ft/Menu' set up to track remote branch 'ft/Menu' from 'origin'.
 ```
+## Exercise 2
+```
+➜  git-cafe-exercise git:(ft/Menu) git checkout -b bugfix/coantact-page-issue
+Switched to a new branch 'bugfix/coantact-page-issue'
+➜  git-cafe-exercise git:(bugfix/coantact-page-issue) git add .                                 
+➜  git-cafe-exercise git:(bugfix/coantact-page-issue) ✗ git commit -m " ft: change the title of the index-4.html file to “Contact”"
+[bugfix/coantact-page-issue d859f19]  ft: change the title of the index-4.html file to “Contact”
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename index-4.html => contact.html (100%)
+➜  git-cafe-exercise git:(bugfix/coantact-page-issue) git push -u origin bugfix/coantact-page-issu -f                            
+error: src refspec bugfix/coantact-page-issu does not match any
+error: failed to push some refs to 'https://github.com/ALVINdimpos/git-cafe-exercise.git'
+➜  git-cafe-exercise git:(bugfix/coantact-page-issue) git push -u origin bugfix/contact-page-issu -f 
+error: src refspec bugfix/contact-page-issu does not match any
+error: failed to push some refs to 'https://github.com/ALVINdimpos/git-cafe-exercise.git'
+➜  git-cafe-exercise git:(bugfix/coantact-page-issue) git pusg                                      
+git: 'pusg' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+➜  git-cafe-exercise git:(bugfix/coantact-page-issue) git push                                      
+fatal: The current branch bugfix/coantact-page-issue has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bugfix/coantact-page-issue
+
+➜  git-cafe-exercise git:(bugfix/coantact-page-issue)  git push --set-upstream origin bugfix/coantact-page-issue
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 339 bytes | 339.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'bugfix/coantact-page-issue' on GitHub by visiting:
+remote:      https://github.com/ALVINdimpos/git-cafe-exercise/pull/new/bugfix/coantact-page-issue
+remote: 
+To https://github.com/ALVINdimpos/git-cafe-exercise.git
+ * [new branch]      bugfix/coantact-page-issue -> bugfix/coantact-page-issue
+Branch 'bugfix/coantact-page-issue' set up to track remote branch 'bugfix/coantact-page-issue' from 'origin'.
+➜  git-cafe-exercise git:(bugfix/coantact-page-issue) 
+```
+## Exercise 3
+```
+➜  git-cafe-exercise git:(bugfix/coantact-page-issue) git checkout -b hotfix/contact-telephone                                   
+Switched to a new branch 'hotfix/contact-telephone'
+➜  git-cafe-exercise git:(hotfix/contact-telephone) git add .                                                                  
+➜  git-cafe-exercise git:(hotfix/contact-telephone) ✗ git  commit -m "hotfix:updating the telephone number on the index-4.html page from +1 800 603 6035 to +1 800 659 6035."
+[hotfix/contact-telephone 8e6fdd0] hotfix:updating the telephone number on the index-4.html page from +1 800 603 6035 to +1 800 659 6035.
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+➜  git-cafe-exercise git:(hotfix/contact-telephone) ✗ git push
+fatal: The current branch hotfix/contact-telephone has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin hotfix/contact-telephone
+
+➜  git-cafe-exercise git:(hotfix/contact-telephone) ✗  git push --set-upstream origin hotfix/contact-telephone
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 705 bytes | 705.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'hotfix/contact-telephone' on GitHub by visiting:
+remote:      https://github.com/ALVINdimpos/git-cafe-exercise/pull/new/hotfix/contact-telephone
+remote: 
+To https://github.com/ALVINdimpos/git-cafe-exercise.git
+ * [new branch]      hotfix/contact-telephone -> hotfix/contact-telephone
+Branch 'hotfix/contact-telephone' set up to track remote branch 'hotfix/contact-telephone' from 'origin'.
+➜  git-cafe-exercise git:(hotfix/contact-telephone) ✗ 
+```
