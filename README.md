@@ -1123,3 +1123,42 @@ To https://github.com/ALVINdimpos/git-cafe-exercise.git
 ➜  git-cafe-exercise git:(main) 
 
 ```
+# BUNDLE 6
+## Exercise 1
+```
+➜  git-cafe-exercise git:(main) git checkout -b ft/Menu                            
+Switched to a new branch 'ft/Menu'
+➜  git-cafe-exercise git:(ft/Menu) ✗ git add .              
+➜  git-cafe-exercise git:(ft/Menu) ✗ git commit -m " ft: Added menu page"               
+[ft/Menu 50774aa]  ft: Added menu page
+ Committer: ALVIN CODER <andelarwanda@Andelas-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 menu.html
+➜  git-cafe-exercise git:(ft/Menu) git push -u origin ft/Menu -f       
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 301.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/Menu' on GitHub by visiting:
+remote:      https://github.com/ALVINdimpos/git-cafe-exercise/pull/new/ft/Menu
+remote: 
+To https://github.com/ALVINdimpos/git-cafe-exercise.git
+ * [new branch]      ft/Menu -> ft/Menu
+Branch 'ft/Menu' set up to track remote branch 'ft/Menu' from 'origin'.
+```
